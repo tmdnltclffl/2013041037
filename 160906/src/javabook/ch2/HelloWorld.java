@@ -14,6 +14,7 @@ public class HelloWorld {
 			System.out.println("입력 받은 숫자 : " + number);
 		else if(number<=0)
 			System.out.println("ㅈㅅ");
+		System.out.println("개솔 ㅅㄱ");
 		}
 
 }
