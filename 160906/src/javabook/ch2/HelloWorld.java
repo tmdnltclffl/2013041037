@@ -10,8 +10,7 @@ public class HelloWorld {
 		int a=3,b=4;
 		System.out.println(a+"+"+b+"="+(a+b));
 		System.out.printf("%d+%d=%d",a,b,a+b);
-		
-		
+
 		Scanner sc = new Scanner(System.in);
 		int number;
 		number = sc.nextInt();    
