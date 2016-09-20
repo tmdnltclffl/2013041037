@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class HelloWorld {
 	
+	
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,7 +18,7 @@ public class HelloWorld {
 		number = sc.nextInt();    
 		if(number>0)
 			System.out.println("입력 받은 숫자 : " + number);
-		else if(number<=0)
+		else 
 			System.out.println("추워");
 		System.out.println("개추워 크레용");
 		}
