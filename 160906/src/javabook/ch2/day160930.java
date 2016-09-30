@@ -52,7 +52,7 @@ public class day160930 {
 //		}
 		
 		
-//		// 큰 금액의 동전을 우선적으로 거슬러 줘야한다.
+//		 큰 금액의 동전을 우선적으로 거슬러 줘야한다.
 //		int[] coinUnit = {500, 100, 50, 10};
 //		int money = 2680;
 //		System.out.println("money="+money);
@@ -61,7 +61,7 @@ public class day160930 {
 //		money -= money/coinUnit[i]*coinUnit[i];
 //		}
 
-		if(args.length!=1) {
+/*		if(args.length!=1) {
 			System.out.println("USAGE: java Exercise5_7 3120");
 			System.exit(0);
 			}
@@ -82,7 +82,7 @@ public class day160930 {
 			}
 			coin[i] -= coinNum;
 //			3. 금액에서 동전의 개수(coinNum)와 동전단위를 곱한 값을 뺀다.
-			money -= money/coinUnit[i]*coinUnit[i];
+			money -= coinNum*coinUnit[i];
 			System.out.println(coinUnit[i]+"원: "+coinNum);
 			}
 			if(money > 0) {
@@ -92,7 +92,77 @@ public class day160930 {
 			System.out.println("=남은 동전의 개수 =");
 			for(int i=0;i<coinUnit.length;i++) {
 			System.out.println(coinUnit[i]+"원:"+coin[i]);
+			}*/
+		
+		
+/*		int[] answer = { 1,4,4,3,1,4,4,2,1,3,2 };
+		int[] counter = new int[4];
+		for(int i=0; i < answer.length;i++) {
+			for(int a=0;a<4;a++)
+			{
+				if(answer[i]==a+1){
+					counter[a] +=1;
+				}
 			}
+		}
+		for(int i=0; i < counter.length;i++) {
+			System.out.print(counter[i]);
+			for(int a=0;a<counter[i];a++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}*/
+		
+		
+/*		char[][] star = {
+				{'*','*',' ',' ',' '},
+				{'*','*',' ',' ',' '},
+				{'*','*','*','*','*'},
+				{'*','*','*','*','*'}
+				};
+				char[][] result = new char[star[0].length][star.length];
+				for(int i=0; i < star.length;i++) {
+				for(int j=0; j < star[i].length;j++) {
+				System.out.print(star[i][j]);
+				} System.out.println();
+				}
+				System.out.println();
+				for(int i=0; i < star.length;i++) {
+				for(int j=0; j < star[i].length;j++) {
+					result[j][i]=star[star.length-1-i][j];
+				}
+				}
+				for(int i=0; i < result.length;i++) {
+				for(int j=0; j < result[i].length;j++) {
+				System.out.print(result[i][j]);
+				} System.out.println();
+				}*/
+		
+		
+/*		char[] abcCode =
+			{ '`','~','!','@','#','$','%','^','&','*',
+			'(',')','-','_','+','=','|','[',']','{',
+			'}',';',':',',','.','/'};
+			                  // 0 1 2 3 4 5 6 7 8 9
+			char[] numCode = {'q','w','e','r','t','y','u','i','o','p'};
+			String src = "abc123";
+			String result = "";
+			// 문자열 src의 문자를 charAt()으로 하나씩 읽어서 변환 후 result에 저장
+			for(int i=0; i < src.length();i++) {
+				char ch = src.charAt(i);
+				if(48<=(int)ch && (int)ch<=57){
+					result += numCode[(int)ch-48];
+					System.out.println("result:"+numCode[(int)ch-48]);
+				}
+				else{
+					result += abcCode[(int)ch-97];
+				}
+			}
+			System.out.println("src:"+src);
+			System.out.println("result:"+result);*/
+		
+		
+		
 			
 	
 	}
