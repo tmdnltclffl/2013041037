@@ -2,6 +2,7 @@ package javabook.ch2;
 
 
 /*//추상 클래스
+
 abstract class MyAbstractClass{
 	int num1,num2;
 	int result;
