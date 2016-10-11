@@ -5,7 +5,7 @@ public class day161011 {
 	static int count = 0;
 	static String prefix = "";
 	
-	public static void main(String[] args) {
+	public void go() {
 		// TODO Auto-generated method stub
 	/*	System클래스.out객체.println메소드("hello world");*/
 		
@@ -58,5 +58,8 @@ public class day161011 {
 	}
 
 		
-
+	public static void main(String[] args){
+		day161011 hr = new day161011();
+		hr.go();
+	}
 }
