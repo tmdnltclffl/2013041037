@@ -1,5 +1,7 @@
 package javabook.ch2;
 
+import java.util.Scanner;
+
 public class day161018 {
 	public static void main(String[] args) {
 		/*
@@ -33,7 +35,7 @@ public class day161018 {
 		 * System.out.println(sb.toString());
 		 */
 
-		Integer num1 = new Integer(30);
+		/*Integer num1 = new Integer(30);
 		Integer num2 = num1.intValue();
 		Integer num3 = 50;
 
@@ -50,7 +52,28 @@ public class day161018 {
 
 		int result = num1 + Integer.parseInt(num5);
 		System.out.println("num1+num5 = " + result);
-
+*/
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("환경변수 PATH: "+System.getenv("PATH"));
+		System.setProperty("user", "홍길동");
+		System.out.println("user 속성값:  "+System.getenv("user"));
+		
+		System.out.println("종료하려면 x 를 누르세요!!");
+		while(true){
+			if(scanner.next().equals("x")){
+				System.out.println("프로그램종료함!!");
+				System.exit(0);
+			}
+			else
+				System.out.println("다시 입력하세요!!");
+			
+		}
+		
+		
+		
+		
 	}
 
 }
