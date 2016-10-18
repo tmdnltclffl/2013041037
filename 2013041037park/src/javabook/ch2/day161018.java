@@ -54,7 +54,7 @@ public class day161018 {
 		System.out.println("num1+num5 = " + result);
 */
 		
-/*		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("환경변수 PATH: "+System.getenv("PATH"));
 		System.setProperty("user", "홍길동");
@@ -69,13 +69,13 @@ public class day161018 {
 			else
 				System.out.println("다시 입력하세요!!");
 			
-		}*/
+		}
 		
-		Scanner scan = new Scanner(System.in);
-		String msg = scan.next();
+
+/*		String msg = scan.next();
 		System.out.println("입력: " + msg);
 		int num = scan.nextInt();
-		System.out.println("입력: "+num);
+		System.out.println("입력: "+num);*/
 		
 		
 	
