@@ -13,14 +13,29 @@ public class lottogui extends JFrame implements ActionListener {
 		
 		Panel p1 = new Panel();
 		Panel p2 = new Panel();
+		Panel p3 = new Panel();
+		
+		TextField tx1 = new TextField(2);
+		TextField tx2 = new TextField(2);
+		TextField tx3 = new TextField(2);
+		TextField tx4 = new TextField(2);
+		TextField tx5 = new TextField(2);
+		TextField tx6 = new TextField(2);
+		p3.add(tx1);
+		p3.add(tx2);
+		p3.add(tx3);
+		p3.add(tx4);
+		p3.add(tx5);
+		p3.add(tx6);
 		p2.add(btn);
 		JLabel label = new JLabel(Arrays.toString(arr));
 		p1.add(label);
 		btn.addActionListener(this);
 		add(p1,BorderLayout.NORTH);
 		add(p2,BorderLayout.SOUTH);
+		add(p3,BorderLayout.CENTER);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
-		setSize(300,100);
+		setSize(350,150);
 		setVisible(true);
 	}
 
