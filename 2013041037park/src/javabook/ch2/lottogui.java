@@ -17,7 +17,7 @@ public class lottogui extends JFrame implements ActionListener {
 		JLabel label = new JLabel(Arrays.toString(arr));
 		p1.add(label);
 		btn.addActionListener(this);
-		add(p1,BorderLayout.WEST);
+		add(p1,BorderLayout.SOUTH);
 		add(p2,BorderLayout.NORTH);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(300,150);
