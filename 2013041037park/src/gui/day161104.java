@@ -12,7 +12,6 @@ public class day161104 implements ActionListener {
 	JMenuItem  menu11,menu12,menu13,menu21,menu22,menu23,menu31,menu32,menu33;
 	public static void main(String[] args){
 		 day161104 menu = new day161104();
-		
 	}
 	public day161104(){
 
@@ -64,7 +63,6 @@ public class day161104 implements ActionListener {
 		String obj = e.getActionCommand();
 			if("·Î¶Ç".equals(obj)){
 				lotto a = new lotto();
-				a.lotto();
 			}
 			
 	}

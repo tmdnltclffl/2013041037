@@ -33,7 +33,6 @@ public class lottogui extends JFrame implements ActionListener {
 		if(obj==btn){
 			dispose();
 			lotto a=new lotto();
-			a.lotto();
 		}
 	}
 

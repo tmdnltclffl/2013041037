@@ -7,7 +7,7 @@ public class lotto {
 	static int [] arr = new int[6];
 
 	
-	public static void lotto(){
+	public lotto(){
 		Random r1 = new Random(System.currentTimeMillis());
 		for(int i=0; i<6; i++)
 		{
