@@ -2,10 +2,12 @@ package gui;
 
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.*;
 import java.util.Arrays;
 
 import javax.swing.*;
 public class day161104 implements ActionListener {
+
 	JFrame frame = new JFrame("메뉴");
 	JMenu menu;
 	JMenuBar menubar;
@@ -16,6 +18,7 @@ public class day161104 implements ActionListener {
 	public day161104(){
 
 	
+	//메뉴
 		menubar = new JMenuBar();
 		frame.setJMenuBar(menubar);
 		menu = new JMenu("파일");
@@ -47,11 +50,71 @@ public class day161104 implements ActionListener {
 		menu.add(menu33);
 		menubar.add(menu);
 
+		//계산기
+		JPanel p1 = new JPanel();
+		p1.setSize(50,200 );
+		p1.setLayout(new GridLayout(4,4,5,5));
+		JButton c = new JButton("c");
+		JButton plus = new JButton("＋");
+		JButton minus = new JButton("－");
+		JButton devision = new JButton("/");
+		JButton multiplication = new JButton("*");
+		JButton B1 = new JButton("1");
+		JButton B2 = new JButton("2");
+		JButton B3 = new JButton("3");
+		JButton B4 = new JButton("4");
+		JButton B5 = new JButton("5");
+		JButton B6 = new JButton("6");
+		JButton B7 = new JButton("7");
+		JButton B8 = new JButton("8");
+		JButton B9 = new JButton("9");
+		JButton B0 = new JButton("0");
+		JButton NO = new JButton();
+		JButton equal = new JButton("=");
+		
+		p1.add(B1);
+		p1.add(B2);
+		p1.add(B3);
+		p1.add(devision);
+		p1.add(B4);
+		p1.add(B5);
+		p1.add(B6);
+		p1.add(multiplication);
+		p1.add(B7);
+		p1.add(B8);
+		p1.add(B9);
+		p1.add(plus);
+		p1.add(NO);
+		p1.add(B0);
+		p1.add(equal);
+		p1.add(minus);
+		
+		JPanel p3 = new JPanel();
+		TextField number = new TextField(50);
+		p3.add(number);
 		
 		
-
-
-		frame.setSize(250,200);
+		
+		
+		c.addActionListener(this);
+		plus.addActionListener(this);
+		devision.addActionListener(this);
+		multiplication.addActionListener(this);
+		B1.addActionListener(this);
+		B2.addActionListener(this);
+		B3.addActionListener(this);
+		B4.addActionListener(this);
+		B5.addActionListener(this);
+		B6.addActionListener(this);
+		B7.addActionListener(this);
+		B8.addActionListener(this);
+		B9.addActionListener(this);
+		B0.addActionListener(this);
+		equal.addActionListener(this);
+		
+		frame.add(p1,BorderLayout.SOUTH);
+		frame.add(p3,BorderLayout.NORTH);
+		frame.setSize(450,230);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 	}
