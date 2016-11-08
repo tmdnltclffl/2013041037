@@ -91,7 +91,7 @@ public class day161104 implements ActionListener {
 		
 		JPanel p3 = new JPanel();
 		TextField number = new TextField(50);
-		number.setEditable(false);
+		number.setEditable(false);//텍스트 파일 못 쓰게
 		p3.add(number);
 		
 		
