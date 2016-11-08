@@ -91,6 +91,7 @@ public class day161104 implements ActionListener {
 		
 		JPanel p3 = new JPanel();
 		TextField number = new TextField(50);
+		number.setEditable(false);
 		p3.add(number);
 		
 		
