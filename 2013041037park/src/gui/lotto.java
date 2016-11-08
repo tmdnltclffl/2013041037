@@ -1,13 +1,11 @@
 
-package javabook.ch2;
+package gui;
 import java.util.Random;
 import java.util.Arrays;
 
 public class lotto {
 	static int [] arr = new int[6];
-	public static void main(String[] args) {
-	lotto();
-}
+
 	
 	public static void lotto(){
 		Random r1 = new Random(System.currentTimeMillis());
